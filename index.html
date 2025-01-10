@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home PAGE</title>
+</head>
+<body>
+    <header><h1>Movers<span>INCH</span></h1>
+         <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="header">
+            <ul>
+                <li>
+                    <a href="#">Hello Username!
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="{% url 'store' %}">Stores</a></li>
+                            <li><a href="{% url 'business' %}">Business</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="{% url 'advert' %}">Advertisement</a></li>
+                            <li><a href="{% url 'health' %}">Health</a></li>
+                            <li>
+                                <a href="#">Entertainment<i class="fas fa-caret-down"></i></a>
+                                <div class="dropdown-menu-1">
+                                    <ul>
+                                        <li><a href="{% url 'music' %}">Music</a></li>
+                                        <li><a href="#">NFT</a></li>
+                                        <li><a href="#">Music Videos</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="{% url 'contact' %}">Contact us</a></li>
+            </ul>
+        </div>
+        <div id="searchInput">
+            <form action="#" method="get">
+              <input type="search" name="query" placeholder="Search here ...">
+              <button id="search-btn">
+              <i class="fa fa-search"></i>
+            </button>
+            </form>
+          </div>
+        <div id="S-I-O" >
+            <a href="#"><button id="user-signUP">Settings</button></a>
+        </div>
+    </div> 
+
+        <button class="hamburgerbtn" id="hamburgerbtn" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+    <main>
+
+       <section class="hero">
+        <div class="hero_content">
+            <h2>The More You Are..The More We are!</h2>
+            <p>It's Amazing isn't it! Well, it is actually!</p>
+        </div>
+       </section>
+
+               <!-- News Ticker -->
+               <div class="news-ticker">
+                <div class="news-content">
+                    <div class="news-item">Breaking News: Lorem ipsum dolor sit amet.</div>
+                    <div class="news-item">Update: Consectetur adipiscing elit.</div>
+                    <div class="news-item">Trending: Integer fringilla nisl sit amet dolor.</div>
+                </div>
+                <div class="trending-label">Trending</div>
+            </div>
+
+        <section class="about" id="about">
+            <h2>Who We Are</h2>
+            <div class="home_about" data-animate>
+            <div class="content_container">
+                <p>Here at MoverInch , we show how to get things done the cool way! We do this, we do that, and more!</p>
+                <a href="#"><button>Learn More ➡</button></a>
+            </div>
+        </div>
+        </section>
+
+        
+        <div id="entertainment" data-animate>
+        <section class="features">
+            <div class="music_image_cont">
+                <img src="img1.jpg" alt="music image">
+            </div>
+            <div class="music_content">
+                <h2>Entertainment</h2>
+                <p>Here at MoverInch , we show how to get things done the cool way! We do this, we do that, and more!</p>
+                <a href="#"><button>Dive In</button></a>
+            </div>
+        </section>
+    </div>
+
+        
+        <div id="advert" data-animate>
+        <section class="features">
+            <div class="music_image_cont">
+                <img src="ad.jpg" alt="music image">
+            </div>
+            <div class="music_content">
+                <h2>Advertisment</h2>
+                <p>Here at MoverInch , we show how to get things done the cool way! We do this, we do that, and more!</p>
+                <a href="#"><button>Advertise</button></a>
+            </div>
+        </section>
+    </div>
+
+        
+        <div id="business" data-animate>
+        <section class="features">
+            <div class="music_image_cont">
+                <img src="all.jpg" alt="music image">
+            </div>
+            <div class="music_content">
+                <h2>Business</h2>
+                <p>Here at MoverInch , we show how to get things done the cool way! We do this, we do that, and more!</p>
+                <a href="#"><button>Let's Save</button></a>
+            </div>
+        </section>
+    </div>
+
+        <div id="health" data-animate>
+        <section class="features">       
+            <div class="music_image_cont">
+                <img src="shop-3.jpg" alt="music image">
+            </div>
+            <div class="music_content">
+                <h2>Health</h2>
+                <p>Here at MoverInch , we show how to get things done the cool way! We do this, we do that, and more!</p>
+                <a href="#"><button>Health Up</button></a>
+            </div>
+        </section>
+    </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; copyright 2024 by <span>BGMV</span> | all rights reserved!</p>
+
+    </footer>
+</body>
+<script src="main.js"></script>
+</html>
